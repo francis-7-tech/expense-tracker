@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><rect x='3' y='6' width='17' height='13' rx='2.5' fill='%236c5ce7'/>
+    <path d='M16 12.5h5.5a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-0.5 0.5H16a1.5 1.5 0 0 1 0-3z' fill='%23ffffff'/></svg>">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+
+    <div class="app">
+        <aside class="sidebar">
+            <div class="logo">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8.5C3 7.12 4.12 6 5.5 6H18a2 2 0 0 1 2 2v0.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <rect x="3" y="6" width="17" height="13" rx="2.5" fill="currentColor" opacity="0.15"/>
+                    <rect x="3" y="6" width="17" height="13" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M16 12.5h5.5a0.5 0.5 0 0 1 0.5 0.5v2a0.5 0.5 0 0 1-0.5 0.5H16a1.5 1.5 0 0 1 0-3z" fill="currentColor"/>
+                </svg>
+                <h2>Expense Tracker</h2>
+            </div>
+            <nav>
+                <ul>
+                   <li><a href="#">Dashboard</a></li>
+                   <li><a href="#">Transactions</a></li>
+                   <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+    
+
+        <main class="main">
+
+            <h1>Dashboard</h1>
+
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" autocomplete="off">
+                <input type="number" id="amount" placeholder="Amount">
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+
+            <section class="cards">
+                <div class="card">
+                    <p>Balance: <span id="balance">0</span></p>
+                </div>
+                <div class="card">
+                    <p>Income: <span id="total-income">0</span></p>
+                </div>
+                <div class="card">
+                    <p>Expense: <span id="total-expense">0</span></p>
+                </div> 
+            </section>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                             <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="transaction-list">
+                    <!-- rows render here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
