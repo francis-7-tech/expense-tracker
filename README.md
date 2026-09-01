@@ -2,7 +2,7 @@
 
 A clean, dashboard-style expense tracker built with vanilla HTML, CSS, and JavaScript — no frameworks, no libraries. Add income and expense transactions, see your balance update in real time, and keep your data across sessions.
 
-**[Live demo →](https://francis-7-tech.github.io/expense-tracker/)**
+**[Live demo →](https://expense-tracker-zeta-kohl-42.vercel.app/)**
 
 ## Features
 
