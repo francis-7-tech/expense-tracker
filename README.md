@@ -2,6 +2,8 @@
 
 A clean, dashboard-style expense tracker built with vanilla HTML, CSS, and JavaScript — no frameworks, no libraries. Add income and expense transactions, see your balance update in real time, and keep your data across sessions.
 
+**[Live demo →](https://francis-7-tech.github.io/expense-tracker/)**
+
 ## Features
 
 - Add transactions with a description, amount, and type (income or expense)
