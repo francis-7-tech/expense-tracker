@@ -28,7 +28,7 @@ form.addEventListener("submit", function(element) {
 });
 
 function renderTransactions() {
-    transactionList.innerHTML = "";   // clear first, so we don't duplicate rows
+    transactionList.innerHTML = "";   
     transactions.forEach(function(t) {
         const row = document.createElement("tr");
         row.innerHTML = `
