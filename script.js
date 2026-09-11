@@ -14,15 +14,15 @@ form.addEventListener("submit", function(element) {
     element.preventDefault();
 
     const transaction = {
-        id: Date.now(),                    // unique id — we'll use it for delete later
+        id: Date.now(),                    
         description: description.value,
-        amount: Number(amount.value), // convert string → number
+        amount: Number(amount.value), 
         type: typeSelect.value
     };
 
     transactions.push(transaction);
     saveTransactions();
-    renderTransactions();   // a function you'll write next
+    renderTransactions();   
     updateSummary();
     form.reset();           // clears the inputs after submit
     
