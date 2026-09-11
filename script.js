@@ -6,7 +6,6 @@ const transactionList = document.getElementById("transaction-list");
 const balanceEl = document.getElementById("balance");
 const incomeEl = document.getElementById("total-income");
 const expenseEl = document.getElementById("total-expense");
-const themeToggle = document.getElementById("theme-toggle");
 
 let transactions = [];
 
